@@ -16,8 +16,10 @@
 		EF89972D2A66B94E00A59E45 /* LittleLemonDinnerMenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89972C2A66B94E00A59E45 /* LittleLemonDinnerMenuUITestsLaunchTests.swift */; };
 		EF89973A2A66BB4A00A59E45 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8997392A66BB4A00A59E45 /* MockData.swift */; };
 		EF89973C2A66BC4800A59E45 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89973B2A66BC4800A59E45 /* MenuItemsView.swift */; };
-		EF89973E2A66BC6000A59E45 /* MenuItemsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89973D2A66BC6000A59E45 /* MenuItemsOptionView.swift */; };
 		EF8997402A66BC7100A59E45 /* MenuItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89973F2A66BC7100A59E45 /* MenuItemDetailsView.swift */; };
+		EF8997422A66C29300A59E45 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8997412A66C29300A59E45 /* Ingredient.swift */; };
+		EF8997442A66C2DC00A59E45 /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8997432A66C2DC00A59E45 /* MenuCategory.swift */; };
+		EF8997482A66CFA000A59E45 /* MenuItemsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8997472A66CFA000A59E45 /* MenuItemsOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,10 @@
 		EF89972C2A66B94E00A59E45 /* LittleLemonDinnerMenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonDinnerMenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EF8997392A66BB4A00A59E45 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		EF89973B2A66BC4800A59E45 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
-		EF89973D2A66BC6000A59E45 /* MenuItemsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsOptionView.swift; sourceTree = "<group>"; };
 		EF89973F2A66BC7100A59E45 /* MenuItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailsView.swift; sourceTree = "<group>"; };
+		EF8997412A66C29300A59E45 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		EF8997432A66C2DC00A59E45 /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
+		EF8997472A66CFA000A59E45 /* MenuItemsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +111,10 @@
 				EF8997102A66B94D00A59E45 /* ContentView.swift */,
 				EF8997392A66BB4A00A59E45 /* MockData.swift */,
 				EF89973B2A66BC4800A59E45 /* MenuItemsView.swift */,
-				EF89973D2A66BC6000A59E45 /* MenuItemsOptionView.swift */,
 				EF89973F2A66BC7100A59E45 /* MenuItemDetailsView.swift */,
+				EF8997472A66CFA000A59E45 /* MenuItemsOptionView.swift */,
+				EF8997432A66C2DC00A59E45 /* MenuCategory.swift */,
+				EF8997412A66C29300A59E45 /* Ingredient.swift */,
 				EF8997122A66B94E00A59E45 /* Assets.xcassets */,
 				EF8997142A66B94E00A59E45 /* LittleLemonDinnerMenu.entitlements */,
 				EF8997152A66B94E00A59E45 /* Preview Content */,
@@ -271,12 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8997442A66C2DC00A59E45 /* MenuCategory.swift in Sources */,
 				EF89973C2A66BC4800A59E45 /* MenuItemsView.swift in Sources */,
 				EF8997112A66B94D00A59E45 /* ContentView.swift in Sources */,
+				EF8997422A66C29300A59E45 /* Ingredient.swift in Sources */,
 				EF89973A2A66BB4A00A59E45 /* MockData.swift in Sources */,
 				EF89970F2A66B94D00A59E45 /* LittleLemonDinnerMenuApp.swift in Sources */,
-				EF89973E2A66BC6000A59E45 /* MenuItemsOptionView.swift in Sources */,
 				EF8997402A66BC7100A59E45 /* MenuItemDetailsView.swift in Sources */,
+				EF8997482A66CFA000A59E45 /* MenuItemsOptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
