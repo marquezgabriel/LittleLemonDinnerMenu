@@ -16,7 +16,7 @@ struct MenuItemDetailsView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             HStack {
-                Text(item.name)
+                Text(item.title)
                     .font(.headline)
                 Text("$\(item.price, specifier: "%.2f")")
                     .font(.subheadline)
@@ -26,7 +26,7 @@ struct MenuItemDetailsView: View {
             Spacer()
         }
         .padding()
-        .navigationBarTitle(Text(item.name), displayMode: .inline)
+        .navigationBarTitle(Text(item.title), displayMode: .inline)
     }
 }
 

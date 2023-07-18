@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuItem: Identifiable {
     let id = UUID()
-    let name: String
+    let title: String
     let category: String
     let price: Double
     let imageName: String
@@ -34,7 +34,7 @@ struct MenuItemsView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 100)
                     .clipped()
-                Text(item.name)
+                Text(item.title)
                     .font(.caption)
                     .frame(width: 100, alignment: .center)
             }
