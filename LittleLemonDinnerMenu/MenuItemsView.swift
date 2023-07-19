@@ -41,17 +41,6 @@ struct MenuItem: MenuItemProtocol, Identifiable {
     var ordersCount: Int
 }
 
-
-//struct MenuItem: Identifiable {
-//    let id = UUID()
-//    let title: String
-//    let category: String
-//    let price: Double
-//    let imageName: String
-//    let description: String
-//    let ingredients: [Ingredient]
-//}
-
 struct MenuSection: Identifiable {
     let id = UUID()
     let name: String
@@ -80,10 +69,6 @@ class MenuViewViewModel {
         self.allItems = menuItems
     }
 }
-
-//
-// let viewModel = MenuViewViewModel(menuItems: mockData)
-//
 
 struct MenuItemsView: View {
     let item: MenuItem
