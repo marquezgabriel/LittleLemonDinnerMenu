@@ -7,21 +7,83 @@
 
 import SwiftUI
 
-struct MenuItem: Identifiable {
+protocol MenuItemProtocol {
+    var id: UUID { get }
+    var price: Double { get }
+    var title: String { get }
+    var menuCategory: MenuCategory { get }
+    var ordersCount: Int { get set }
+    var ingredients: [Ingredient] { get set }
+}
+
+struct MenuItem: MenuItemProtocol, Identifiable {
     let id = UUID()
     let title: String
     let category: String
     let price: Double
     let imageName: String
     let description: String
-    let ingredients: [Ingredient]
+    var ingredients: [Ingredient]
+    var menuCategory: MenuCategory {
+        get {
+            switch self.category {
+            case "Food":
+                return MenuCategory.food
+            case "Drink":
+                return MenuCategory.drink
+            case "Dessert":
+                return MenuCategory.dessert
+            default:
+                fatalError("Invalid category")
+            }
+        }
+    }
+    var ordersCount: Int
 }
+
+
+//struct MenuItem: Identifiable {
+//    let id = UUID()
+//    let title: String
+//    let category: String
+//    let price: Double
+//    let imageName: String
+//    let description: String
+//    let ingredients: [Ingredient]
+//}
 
 struct MenuSection: Identifiable {
     let id = UUID()
     let name: String
     let items: [MenuItem]
 }
+
+class MenuViewViewModel {
+    // Properties
+    private var allItems: [MenuItem]
+    
+    // Filtered properties
+    var foodMenuItems: [MenuItem] {
+        allItems.filter { $0.category == MenuCategory.food.rawValue }
+    }
+    
+    var drinkMenuItems: [MenuItem] {
+        allItems.filter { $0.category == MenuCategory.drink.rawValue }
+    }
+    
+    var dessertMenuItems: [MenuItem] {
+        allItems.filter { $0.category == MenuCategory.dessert.rawValue }
+    }
+    
+    // Initialization
+    init(menuItems: [MenuItem]) {
+        self.allItems = menuItems
+    }
+}
+
+//
+// let viewModel = MenuViewViewModel(menuItems: mockData)
+//
 
 struct MenuItemsView: View {
     let item: MenuItem

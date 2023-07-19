@@ -35,6 +35,6 @@ struct MenuItemsOptionView: View {
             }
         }
         .listStyle(GroupedListStyle())
-        .navigationTitle("Menu Options")
+        .navigationTitle("Filter")
     }
 }

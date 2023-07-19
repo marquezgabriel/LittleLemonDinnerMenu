@@ -27,7 +27,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("Menu")
                 .navigationBarItems(trailing: NavigationLink(destination: MenuItemsOptionView()) {
-                    Image(systemName: "gear")
+                    Image(systemName: "slider.horizontal.3")
                 })
             }
         }
