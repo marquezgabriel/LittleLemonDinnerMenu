@@ -20,6 +20,7 @@
 		EF8997422A66C29300A59E45 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8997412A66C29300A59E45 /* Ingredient.swift */; };
 		EF8997442A66C2DC00A59E45 /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8997432A66C2DC00A59E45 /* MenuCategory.swift */; };
 		EF8997482A66CFA000A59E45 /* MenuItemsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8997472A66CFA000A59E45 /* MenuItemsOptionView.swift */; };
+		EF954C5B2A686BE40059C52D /* MenuItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF954C5A2A686BE40059C52D /* MenuItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		EF8997412A66C29300A59E45 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		EF8997432A66C2DC00A59E45 /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
 		EF8997472A66CFA000A59E45 /* MenuItemsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsOptionView.swift; sourceTree = "<group>"; };
+		EF954C5A2A686BE40059C52D /* MenuItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				EF8997202A66B94E00A59E45 /* LittleLemonDinnerMenuTests.swift */,
+				EF954C5A2A686BE40059C52D /* MenuItemTests.swift */,
 			);
 			path = LittleLemonDinnerMenuTests;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF8997212A66B94E00A59E45 /* LittleLemonDinnerMenuTests.swift in Sources */,
+				EF954C5B2A686BE40059C52D /* MenuItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

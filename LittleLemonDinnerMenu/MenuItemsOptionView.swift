@@ -20,6 +20,8 @@ enum SortOption: String, CaseIterable {
 }
 
 struct MenuItemsOptionView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         List {
             Section(header: Text("Selected Categories")) {
@@ -35,6 +37,14 @@ struct MenuItemsOptionView: View {
             }
         }
         .listStyle(GroupedListStyle())
-        .navigationTitle("Filter")
+        .navigationTitle("Menu Options")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("Done") {
+                    self.presentationMode.wrappedValue.dismiss()
+                }
+            }
+        }
     }
 }
+
